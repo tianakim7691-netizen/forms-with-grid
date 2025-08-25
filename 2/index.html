@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Form and CSS Grid</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="grid-container">
+  <!-- fisrt -->
+    <div class="grid-col">
+      <img src="main.png" alt="Main Image">
+    </div>
+
+  <!-- second -->
+  <div class="grid-col">
+    <img src="Contact.png" alt="Contact Image">
+    <form class="contact-form">
+      <input type="text" name="fullname" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="E-mail" required>
+      <textarea name="message" placeholder="Message" required></textarea>
+      <button type="submit" class="submit-btn">
+        <img src="button.png" alt="Contact Us">
+      </button>
+    </form>
+  </div>
+
+  <!-- third -->
+   <div class="grid-info">
+      <div class="info"></div>
+         <div class="contact-box">
+              <h2>contact.us</h2>
+              <sub>email@example.com</sub>
+         </div>
+         <div class="location-box">
+              <h2>Based in</h2>
+              <sub>New York</sub>
+         </div>
+
+      <div class="social-links">
+         <a href="https://facebook.com" target="_blank">
+             <img src="Face.png" alt="Facebook">
+         </a>
+         <a href="https://instagram.com" target="_blank">
+               <img src="Insta.png" alt="Instagram">
+         </a>
+         <a href="https://twitter.com" target="_blank">
+         <img src="Twitter.png" alt="Twitter">
+         </a>
+      </div>
+    </div>
+ </div>
+
+</body>
+</html>

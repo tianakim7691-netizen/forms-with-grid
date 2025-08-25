@@ -1,0 +1,132 @@
+/* Reset Browser Defaults */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* General */
+body {
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgb(216, 216, 216);
+}
+
+/* Header */
+header {
+    margin-bottom: 8px;
+    padding: 16px;
+    background-color: #0015ff;
+    color: white;
+}
+
+/* Contact Form Area (Grid) */
+#contact-form {
+    background-color: rgb(239, 239, 239);
+    border: 1px lightgrey;
+    border-radius: 10px;
+    display: grid;
+    grid-template-areas:
+        'heading heading'
+        'name last'
+        'email job'
+        'address address'
+        'city zip'
+        'date file';
+    grid-gap: 10px;
+
+    margin: 8px;
+    padding: 16px;
+}
+
+/* Form Heading */
+#contact-form h2 {
+    grid-area: heading;
+    text-align: left;
+}
+
+/* Form Elements (General) */
+#contact-form label,
+#contact-form input,
+#contact-form select,
+#contact-form textarea,
+#contact-form button {
+    margin: 4px;
+    padding: 3px;
+    display: block;
+    width: 100%;
+}
+
+#contact-form label {
+    text-align: left;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"],
+#contact-form select,
+#contact-form textarea {
+    margin-bottom: 10px;
+}
+
+/* Grid Items / Cells */
+#name-field {
+    grid-area: name;
+}
+
+#last-field {
+    grid-area: last;
+}
+
+#email-field {
+    grid-area: email;
+}
+
+#job-field {
+    grid-area: job;
+}
+
+#address-field {
+    grid-area: address;
+}
+
+#city-field {
+    grid-area: city;
+}
+
+#zip-field {
+    grid-area: zip;
+}
+
+#date-field {
+    grid-area: date;
+}
+
+#file-field {
+    grid-area: file;
+}
+
+.submit-container {
+text-align: right;
+margin: 16px 20px;
+}
+
+.submit-container button {
+    padding: 10px 50px;
+    font-size: 20px;
+    color: aliceblue;
+    font-weight: bold;
+    background-color: blue;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+}
+
+
+/* Footer */
+footer {
+    margin-top: 8px;
+    padding: 16px;
+    background-color: #2200ff;
+    color: white;
+}

@@ -1,0 +1,113 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    
+}
+
+
+#contact-form {
+    background-image: url("main.png");
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-areas:
+        "heading heading"
+        "name email"
+        "tell tell";
+
+    gap: 12px; 
+    padding: 24px;
+
+    width: 100%;
+    max-width: 640px;   
+    margin: 40px auto;   
+    align-items: start;    
+    justify-items: stretch;
+}
+
+#contact-form ::placeholder {
+    color: lightgray;
+}
+
+/* Form Heading */
+#heading {
+    grid-area: heading;
+    text-align: center;
+    color: #fff;
+    max-width: 480px;
+    margin: 0 auto 16px;
+    line-height: 40px;
+}
+#heading h2 {
+    margin: 5px 0 4px;
+    font-size: 40px;
+}
+#heading p {
+    font-size: 20px;
+    margin: 0;
+}
+/* Grid Items / Cells */
+#name-fields { grid-area: name; }   
+#email-field { grid-area: email; }
+#tell-field  { grid-area: tell; }
+
+/* Form Elements (General) */
+#contact-form input,
+#contact-form textarea,
+#contact-form select {
+    width: 100%;      
+    max-width: 480%;       
+    border: none;             
+    background-color: #fff;
+    border-radius: 4px;       
+    padding: 8px;
+    height: 40px;         
+    font-size: 14px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: block;          
+}
+
+
+#contact-form label {
+    display: block;
+    margin: 0 0 6px 0;    
+    font-size: 12px;
+    text-align: left;
+}
+
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"] {
+    margin-bottom: 10px;
+}
+
+/* ------submit button-------- */
+.submit-container {
+  display: flex;
+  justify-content: flex-start;    
+  grid-column: 1 / -1;       
+  margin-top: 12px;
+}
+
+.submit-container button {
+    min-width: 150px;     
+    padding: 12px 24px;
+    font-size: 14px;
+    color: rgb(17, 0, 255);
+    background-color: #fff;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
